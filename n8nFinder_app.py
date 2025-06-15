@@ -54,6 +54,6 @@ for _, row in filtered_df.iterrows():
     ### 📌 {row["Nom du workflow"]}
     **Résumé auto :** {row["Résumé auto"]}  
     **Plateforme :** {row["Plateforme"]} | **Catégorie :** {row["Catégorie"]} | **Domaine :** {row["Domaine"]}  
-    **Tags :** `{row["Tags"]}` | **Score :** {row["Score"]}  
+    **Tags :** {row.get("Tags", "—")}` | **Score :** {row["Score"]}  
     🗂️ Fichier : `{row["Fichier"]}` | Prêt à l’emploi : **{row["Prêt à l’emploi ?"]}**
     """)
