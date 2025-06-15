@@ -1,0 +1,5 @@
+Nom du workflow,Plateforme,Catégorie,Domaine,Résumé,Tags,Prêt à l’emploi ?,Score,Fichier
+Typeform Feedback Collector,Typeform,Formulaire,Satisfaction client,Collecte automatiquement les réponses de Typeform et les envoie vers Google Sheets.,"feedback, formulaire, Google Sheets",Oui,92,1001_typeform_feedback_workflow.json
+LinkedIn Auto Poster,LinkedIn,Réseaux Sociaux,Communication,Publie automatiquement des posts LinkedIn à partir de nouveaux articles de blog.,"linkedin, publication, blog",Oui,87,1023_linkedin_auto_poster.json
+Slack Alert for Form Submissions,Slack,Communication interne,Collaboration,Envoie une alerte Slack lorsqu'un formulaire est soumis.,"slack, alerte, formulaire",Oui,85,1044_slack_alert_form.json
+Inconnu #234,,,,Workflow non encore classifié,,Non,50,1234_unknown.json
