@@ -37,11 +37,11 @@ if pret != "Tous":
     filtered_df = filtered_df[filtered_df["Prêt à l’emploi ?"] == pret]
 
 # Recherche plein texte
-search = st.text_input("🔎 Recherche (nom, résumé, tags)").strip().lower()
+search = st.text_input("🔎 Recherche (nom, Résumé auto, tags)").strip().lower()
 if search:
     filtered_df = filtered_df[
         filtered_df["Nom du workflow"].str.lower().str.contains(search) |
-        filtered_df["Résumé"].str.lower().str.contains(search) |
+        filtered_df["Résumé auto"].str.lower().str.contains(search) |
         filtered_df["Tags"].str.lower().str.contains(search)
     ]
 
@@ -52,7 +52,7 @@ for _, row in filtered_df.iterrows():
     st.markdown(f"""
     ---
     ### 📌 {row["Nom du workflow"]}
-    **Résumé :** {row["Résumé"]}  
+    **Résumé auto :** {row["Résumé auto"]}  
     **Plateforme :** {row["Plateforme"]} | **Catégorie :** {row["Catégorie"]} | **Domaine :** {row["Domaine"]}  
     **Tags :** `{row["Tags"]}` | **Score :** {row["Score"]}  
     🗂️ Fichier : `{row["Fichier"]}` | Prêt à l’emploi : **{row["Prêt à l’emploi ?"]}**
