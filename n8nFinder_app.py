@@ -10,6 +10,9 @@ def load_data():
     return pd.read_csv("workflows_catalogue_streamlit.csv")
 
 df = load_data()
+st.subheader("🧪 Aperçu du fichier CSV chargé")
+st.write(df.head(10))
+st.info(f"📊 Le fichier contient {len(df)} lignes.")
 
 st.title("🔍 n8nFinder – Catalogue intelligent de workflows")
 st.markdown("Trouvez rapidement le workflow n8n adapté à vos besoins : plateforme, usage, score...")
